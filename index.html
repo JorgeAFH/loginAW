@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<!-- ENCABEZADO -->
+<center><h1> Registro de usuario</h1></center>
+<center><h2>by: Jorge Alessandro Figueroa Holguin</h2></center>
+<!-- ESTILOS CSS-->
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body bgcolor="red">
+<main>
+<form action="#" class="formulario" id="formulario">
+<!-- FORMULARIOSS -->
+<div class="formulario_grupo" id="grupo_usuario">
+<label class="formulario__label">Nombre </label>
+<div class="formulario__grupo-input">
+<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="ej: Jorge Alessandro">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">es obligatorio este campo</p>
+</div>
+<!-- DATOS NOMBRE-->
+<div class="formulario_grupo" id="grupo_nombre">
+<label class="formulario__label">Apellido</label>
+<div class="formulario__grupo-input">
+<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="ej: HOMERO">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">es obligatorio este campo</p>
+</div>
+<!-- DATOS CONTRASEÑA 1-->
+<div class="formulario_grupo" id="grupo_password">
+<label class="formulario__label">Contraseña</label>
+<div class="formulario__grupo-input">
+<input type="password" class="formulario__input" name="password" id="password">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">la contraseña debe ser de 4 a 8 digitos</p>
+</div>
+<!-- DATOS CONTRASEÑA 2-->
+<div class="formulario_grupo" id="grupo_password2">
+<label class="formulario__label">Repetir la contraseña</label>
+<div class="formulario__grupo-input">
+<input type="password" class="formulario__input" name="password2" id="password2">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">la contraseña no coincide</p>
+</div>
+<!-- DATOS GMAIL -->
+<div class="formulario_grupo" id="grupo_correo">
+<label class="formulario__label">Correo electronico</label>
+<div class="formulario__grupo-input">
+<input type="email" class="formulario__input" name="correo" id="correo" placeholder="ej: 
+catedra@gmail.com">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error"></p>
+</div>
+<!-- DATOS DEL NUMERO TELEFONICO -->
+<div class="formulario_grupo" id="grupo_telefono">
+<label class="formulario__label">Numero telef</label>
+<div class="formulario__grupo-input">
+<input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="ej: 
+0961553071">
+<i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error"></p>
+</div>
+<!-- TERMINOS Y CONDICIONES -->
+<div class="formulario_grupo formulariogrupo-terminos" id="grupo_terminos">
+<label class="formulario__label">
+<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+<b class="formulario__span">DESEO REGISTRAR ESTE USUARIO</b>
+</label>
+</div>
+<!-- CAMPO OBLIGATORIO -->
+<div class="formulario_mensaje" id="formulario_mensaje">
+<p><i class="fas fa-exclamation-circle"> <b>ATENCION!:</b>DEBES COMPLETAR TODOS LOS CAMPOS</i></p>
+</div>
+<!-- ENVIAR -->
+<div class="formulario_grupo formulario_grupo-btn-enviar">
+<p class="formulario_mensaje-exito" id="formulario_mensaje-exito">BIEN! USUARIO REGISTRADO CON EXITO</p>
+<input class="formulario__btn" type="submit" value="Enviar">
+</div>
+</form>
+</main>
+<!-- JAVASCRIPT -->
+<script src="js/java.js"></script>
+</body>
+</html>
